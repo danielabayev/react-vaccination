@@ -56,30 +56,53 @@ export default function Home(props) {
                     {problemInServer ? ("") : (
                         <div>
                             <form onSubmit={checkValidation}>
-                                <div className="form-group col-11 my-2">
-                                    <label htmlFor="InputLocationName">Location name</label>
-                                    <input type="text"
-                                           className="form-control"
-                                           id="InputLocationName"
-                                           placeholder="Enter location name">
-                                    </input>
+                                <div className="form-group">
+                                    <label htmlFor="FirstName">First name:</label>
+                                    <input type="text" className="form-control" id="FirstName"/>
                                 </div>
-                                <div className="form-group col-11 my-2">
-                                    <label htmlFor="InputLatitude">latitude</label>
-                                    <input type="text"
-                                           className="form-control"
-                                           id="InputLatitude"
-                                           placeholder="Enter latitude">
-                                    </input>
+                                <div className="form-group">
+                                    <label htmlFor="LastName">Last name</label>
+                                    <input type="text" className="form-control" id="LastName"/>
                                 </div>
-                                <div className="form-group col-11 my-2">
-                                    <label htmlFor="InputLongitude">Longitude</label>
-                                    <input type="text"
-                                           className="form-control"
-                                           id="InputLongitude"
-                                           placeholder="Enter longitude">
-                                    </input>
+                                <div className="form-group">
+                                    <label htmlFor="DateOfBirth">Date of birth (in dd/mm/yyyy format)</label>
+                                    <input type="text" className="form-control" id="DateOfBirth"/>
                                 </div>
+                                <div className="form-group">
+                                    <label htmlFor="Address">Address</label>
+                                    <input type="text" className="form-control" id="Address"/>
+                                </div>
+                                <select className="form-select my-3" aria-label="Default select example">
+                                    <option selected>choose your city</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+
+                                {/*<div className="form-group col-11 my-2">*/}
+                                {/*    <label htmlFor="InputLocationName">Location name</label>*/}
+                                {/*    <input type="text"*/}
+                                {/*           className="form-control"*/}
+                                {/*           id="InputLocationName"*/}
+                                {/*           placeholder="Enter location name">*/}
+                                {/*    </input>*/}
+                                {/*</div>*/}
+                                {/*<div className="form-group col-11 my-2">*/}
+                                {/*    <label htmlFor="InputLatitude">latitude</label>*/}
+                                {/*    <input type="text"*/}
+                                {/*           className="form-control"*/}
+                                {/*           id="InputLatitude"*/}
+                                {/*           placeholder="Enter latitude">*/}
+                                {/*    </input>*/}
+                                {/*</div>*/}
+                                {/*<div className="form-group col-11 my-2">*/}
+                                {/*    <label htmlFor="InputLongitude">Longitude</label>*/}
+                                {/*    <input type="text"*/}
+                                {/*           className="form-control"*/}
+                                {/*           id="InputLongitude"*/}
+                                {/*           placeholder="Enter longitude">*/}
+                                {/*    </input>*/}
+                                {/*</div>*/}
                                 <button type="submit" className="btn btn-primary my-2">Submit</button>
                             </form>
                         </div>
