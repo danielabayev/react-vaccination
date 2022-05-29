@@ -58,51 +58,65 @@ export default function Home(props) {
                             <form onSubmit={checkValidation}>
                                 <div className="form-group">
                                     <label htmlFor="FirstName">First name:</label>
-                                    <input type="text" className="form-control" id="FirstName"/>
+                                    <input type="text" className="form-control" id="FirstName" required/>
                                 </div>
                                 <div className="form-group">
                                     <label htmlFor="LastName">Last name</label>
-                                    <input type="text" className="form-control" id="LastName"/>
+                                    <input type="text" className="form-control" id="LastName" required/>
                                 </div>
                                 <div className="form-group">
                                     <label htmlFor="DateOfBirth">Date of birth (in dd/mm/yyyy format)</label>
-                                    <input type="text" className="form-control" id="DateOfBirth"/>
+                                    <input type="text" className="form-control" id="DateOfBirth" required/>
                                 </div>
                                 <div className="form-group">
                                     <label htmlFor="Address">Address</label>
-                                    <input type="text" className="form-control" id="Address"/>
+                                    <input type="text" className="form-control" id="Address" required/>
                                 </div>
                                 <select className="form-select my-3" aria-label="Default select example">
                                     <option selected>choose your city</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
+                                    <option value="1">Vasco Da Gama</option>
+                                    <option value="2">Gangtok</option>
+                                    <option value="3">Aurangabad</option>
+                                    <option value="4">Jehanabad</option>
+                                    <option value="5">Tezpur</option>
+                                    <option value="6">Buxar</option>
+                                    <option value="7">Amaravati</option>
+                                    <option value="8">Tadepalligudem</option>
+                                    <option value="9">Kavali</option>
+                                    <option value="10">Ballia</option>
                                 </select>
+                                <div className="col-md-3 mb-3">
+                                    <label htmlFor="zip">Zip</label>
+                                    <input type="text" className="form-control" id="zip" placeholder="Zip"/>
+                                </div>
+                                <div className="form-group">
+                                    <label htmlFor="LandLine">Land line</label>
+                                    <input type="text" className="form-control" id="LandLine" required/>
+                                </div>
+                                <div className="form-group">
+                                    <label htmlFor="CellularPhone">Cellular phone</label>
+                                    <input type="text" className="form-control" id="CellularPhone" required/>
+                                </div>
+                                <div className="checkbox">
+                                    <label><input type="checkbox" value=""/>have you infected by covid 19?</label>
+                                </div>
 
-                                {/*<div className="form-group col-11 my-2">*/}
-                                {/*    <label htmlFor="InputLocationName">Location name</label>*/}
-                                {/*    <input type="text"*/}
-                                {/*           className="form-control"*/}
-                                {/*           id="InputLocationName"*/}
-                                {/*           placeholder="Enter location name">*/}
-                                {/*    </input>*/}
-                                {/*</div>*/}
-                                {/*<div className="form-group col-11 my-2">*/}
-                                {/*    <label htmlFor="InputLatitude">latitude</label>*/}
-                                {/*    <input type="text"*/}
-                                {/*           className="form-control"*/}
-                                {/*           id="InputLatitude"*/}
-                                {/*           placeholder="Enter latitude">*/}
-                                {/*    </input>*/}
-                                {/*</div>*/}
-                                {/*<div className="form-group col-11 my-2">*/}
-                                {/*    <label htmlFor="InputLongitude">Longitude</label>*/}
-                                {/*    <input type="text"*/}
-                                {/*           className="form-control"*/}
-                                {/*           id="InputLongitude"*/}
-                                {/*           placeholder="Enter longitude">*/}
-                                {/*    </input>*/}
-                                {/*</div>*/}
+                                <h6>previous conditions:</h6>
+                                <div className="checkbox">
+                                    <label><input type="checkbox" value=""/>Diabetes</label>
+                                </div>
+                                <div className="checkbox">
+                                    <label><input type="checkbox" value=""/>Cardio-Vascular problems</label>
+                                </div>
+                                <div className="checkbox">
+                                    <label><input type="checkbox" value=""/>Allergies</label>
+                                </div>
+                                <div className="form-group">
+                                    <label htmlFor="other">other</label>
+                                    <input type="text" className="form-control" id="other"/>
+                                </div>
+
+
                                 <button type="submit" className="btn btn-primary my-2">Submit</button>
                             </form>
                         </div>
