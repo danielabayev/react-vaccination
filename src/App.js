@@ -3,7 +3,6 @@ import Menu from "./components/Menu";
 import NoPage from "./components/NoPage";
 import Home from "./components/Home";
 import InformationPage from "./components/InformationPage";
-import {useEffect, useReducer, useState} from "react";
 
 function App() {
   return (
@@ -13,8 +12,7 @@ function App() {
             <Route path="/" element={<Menu />}>
               <Route index element={<Home/>} />
               <Route path="home" element={<Home/>} />
-              {/*<Route path="informationPage" element={<InformationPage/>}/>*/}
-              <Route path="informationPage" element={<NoPage/>}/>
+              <Route path="informationPage" element={<InformationPage/>}/>
               <Route path="*" element={<NoPage />} />
             </Route>
           </Routes>
