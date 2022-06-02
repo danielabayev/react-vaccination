@@ -53,7 +53,6 @@ export default function InformationPage() {
         fetch(URL)
             .then((res) =>
                 res.json())
-
             .then((response) => {
                 console.log(response);
                 setData(response);
@@ -63,6 +62,8 @@ export default function InformationPage() {
 
     return (
         <>
+            <a href='http://localhost:8000/Excel' className='btn btn-primary'>export to Excel</a>
+            <br/>
             <tbody>
             <tr>
                 <th>patient Id</th>
@@ -105,6 +106,7 @@ export default function InformationPage() {
             <label htmlFor="search">
                 <button id="search" onClick={handleSearch}>search with no filter</button>
             </label>
+
         </>
     );
 }

@@ -1,6 +1,5 @@
 import axios from "axios";
 import {useState} from "react";
-import {useNavigate} from "react-router-dom";
 
 /**
  * the home page component.
@@ -16,20 +15,19 @@ export default function Home(props) {
      */
     const fetchData = async event => {
         let conditions = ""
-        // let condition = conditions
         if (Allergies)
             conditions += 'Allergies'
         if (CardioVascular){
-            if (condition!="")
+            if (condition!=="")
                 conditions += ', '
             conditions += 'CardioVascular'
         }
         if (Diabetes){
-            if (condition!="")
+            if (condition!=="")
                 conditions += ', '
             conditions += 'Diabetes'
         }
-        if (conditions!="" && condition != '') {
+        if (conditions!=="" && condition !== '') {
             conditions += ', '
             conditions += condition
         }
